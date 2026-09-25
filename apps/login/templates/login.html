@@ -1,0 +1,36 @@
+{% extends 'base-login.html' %}
+{% block title %}
+    Login | Sus
+{% endblock %}
+{% load static %}
+{% block content %}
+    <div class="container d-flex vh-100 align-items-center justify-content-center" >
+            <div class="row">
+                <figure class="d-flex justify-content-center mb-3">
+                    <img src="{% static 'img/logo.png' %}" alt="logo" width="200">
+                    <h1 class="nome-hospital"> Santa Casa<br> do Desespero
+                    </h1>
+                </figure>
+                <form action="" method="POST">
+                    <div class="col-12">
+                        <label for="username" class="form-label">
+                            Usuário:
+                        </label>
+                        <input type="text" class="form-control" name="username" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="password" class="form-control" name="password">
+                            Senha:
+                        </label>
+                        <input type="password" class="form-control" name="password" required>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button type="submit" class="btn btn-success col-4">
+                                Entrar
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+    </div>
+{% endblock %}
