@@ -118,6 +118,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+LOGIN_URL = '/login/'
+
 STATICFILES_DIRS = [
 BASE_DIR / 'apps/static_global',
 ]

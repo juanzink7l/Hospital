@@ -1,3 +1,10 @@
 .nome-hospital {
     font-family: Drunk Clown, sans-serif;
+    font-size: 60px;
+    margin-top: -80px;
+    line-height: 0.75;
+}
+
+.img-logo {
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 75%);
 }
