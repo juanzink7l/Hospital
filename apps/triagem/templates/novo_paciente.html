@@ -1,0 +1,15 @@
+{% extends 'base-triagem.html' %}
+{% block title %}Cadastrar Novo Paciente{% endblock %}
+{% block content %}
+    <div class="container vh-100">
+        <h1 class="mt-5">
+            Cadastrar Novo Paciente
+        </h1>
+        <hr>
+        {% if error %}<p>{{ error }}</p>{% endif %}
+        <form action="" method="POST">
+            {% csrf_token %}
+        </form>
+        
+    </div>
+{% endblock %}

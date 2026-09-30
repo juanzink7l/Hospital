@@ -5,7 +5,243 @@
 {% load static %}
 
 {% block content %}
+<style>
 
+    /* ============================= */
+    /* CONFIGURAÇÕES GERAIS */
+    /* ============================= */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #111827;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+
+    /* ============================= */
+    /* CONTAINER DO LOGIN */
+    /* ============================= */
+
+    .container {
+        min-height: 100vh;
+    }
+
+
+    /* ============================= */
+    /* CARD PRINCIPAL */
+    /* ============================= */
+
+    .row {
+        width: 100%;
+        max-width: 430px;
+
+        padding: 35px;
+
+        background: #1f2937;
+
+        border-radius: 15px;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+
+    /* ============================= */
+    /* LOGO */
+    /* ============================= */
+
+    .img-logo {
+        max-width: 200px;
+
+        border-radius: 10px;
+    }
+
+
+    /* ============================= */
+    /* NOME DO HOSPITAL */
+    /* ============================= */
+
+    .nome-hospital {
+        text-align: center;
+
+        color: #ffffff;
+
+        font-size: 30px;
+        font-weight: bold;
+
+        line-height: 1.2;
+    }
+
+
+    /* ============================= */
+    /* FORMULÁRIO */
+    /* ============================= */
+
+    form {
+        width: 100%;
+    }
+
+
+    /* ============================= */
+    /* LABELS */
+    /* ============================= */
+
+    .form-label {
+        color: #e5e7eb;
+
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+
+    /* ============================= */
+    /* INPUTS */
+    /* ============================= */
+
+    .form-control {
+        width: 100%;
+        height: 48px;
+
+        margin-bottom: 18px;
+
+        padding: 12px 15px;
+
+        background: #111827;
+
+        border: 1px solid #374151;
+        border-radius: 8px;
+
+        color: white;
+
+        outline: none;
+
+        transition: 0.3s;
+    }
+
+
+    /* Texto digitado */
+    .form-control {
+        color: white;
+    }
+
+
+    /* Quando clica no input */
+    .form-control:focus {
+        background: #111827;
+
+        color: white;
+
+        border-color: #3b82f6;
+
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    }
+
+
+    /* ============================= */
+    /* BOTÃO */
+    /* ============================= */
+
+    .btn-success {
+        width: 100% !important;
+
+        height: 48px;
+
+        border: none;
+
+        border-radius: 8px;
+
+        background: #2563eb;
+
+        color: white;
+
+        font-size: 16px;
+        font-weight: bold;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+
+
+    /* Quando passar o mouse */
+    .btn-success:hover {
+        background: #1d4ed8;
+
+        transform: translateY(-2px);
+
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+    }
+
+
+    /* Quando clicar */
+    .btn-success:active {
+        transform: translateY(0);
+    }
+
+
+    /* ============================= */
+    /* TEXTO DE CADASTRO */
+    /* ============================= */
+
+    form p {
+        color: #9ca3af;
+
+        text-align: center;
+
+        font-size: 14px;
+    }
+
+
+    /* ============================= */
+    /* LINK */
+    /* ============================= */
+
+    form a {
+        color: #60a5fa;
+
+        font-weight: bold;
+
+        text-decoration: none;
+
+        transition: 0.3s;
+    }
+
+
+    form a:hover {
+        color: #93c5fd;
+
+        text-decoration: underline;
+    }
+
+
+    /* ============================= */
+    /* RESPONSIVIDADE */
+    /* ============================= */
+
+    @media (max-width: 576px) {
+
+        .row {
+            margin: 15px;
+
+            padding: 25px 20px;
+        }
+
+        .nome-hospital {
+            font-size: 25px;
+        }
+
+        .img-logo {
+            max-width: 160px;
+        }
+
+    }
+
+</style>
 <div class="container d-flex vh-100 align-items-center justify-content-center">
 
     <div class="row">

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Novos Pacientes</title>
+<style>
+    /* Remove margens e espaçamentos padrão */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Corpo da página */
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: #111827;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    /* Container principal */
+    .container {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+    }
+
+    /* Caixa do formulário */
+    .row {
+        background: #1f2937;
+        padding: 35px;
+        border-radius: 15px;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    /* Título */
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 10px;
+
+        color: #ffffff;
+    }
+
+    /* Área dos inputs */
+    .row > div {
+        width: 100%;
+    }
+
+    /* Inputs */
+    input {
+        width: 100%;
+        height: 48px;
+
+        padding: 12px 15px;
+
+        border: 1px solid #374151;
+        border-radius: 8px;
+
+        background: #111827;
+        color: white;
+
+        font-size: 15px;
+
+        outline: none;
+
+        transition: 0.3s;
+    }
+
+    /* Placeholder */
+    input::placeholder {
+        color: #9ca3af;
+    }
+
+    /* Quando clicar no input */
+    input:focus {
+        border-color: #3b82f6;
+
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+    }
+
+    /* Form do botão */
+    form {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    /* Botão */
+    button {
+        width: 100%;
+        height: 48px;
+
+        border: none;
+        border-radius: 8px;
+
+        background: #2563eb;
+        color: white;
+
+        font-size: 16px;
+        font-weight: bold;
+
+        cursor: pointer;
+
+        transition: 0.3s;
+    }
+
+    /* Quando passar o mouse */
+    button:hover {
+        background: #1d4ed8;
+        transform: translateY(-2px);
+
+        box-shadow: 0 5px 15px rgba(37, 99, 235, 0.3);
+    }
+
+    /* Quando clicar */
+    button:active {
+        transform: translateY(0);
+    }
+
+    /* Responsividade para celular */
+    @media (max-width: 576px) {
+
+        .container {
+            padding: 15px;
+        }
+
+        .row {
+            padding: 25px 20px;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1> Novo paciente</h1>
+            <div class="d-flex justify-content-center col-12">
+                <input type="text" class="form-control" name="nome" id="nome" required placeholder="Nome do paciente:">
+            </div>
+            <div class="d-flex justify-content-center col-12">
+                <input type="text" class="form-control" name="cpf" id="cpf" required placeholder="000.000.000-00">
+            </div>
+            <div class="d-flex justify-content-center col-12">
+                <input type="date" class="form-control" name="data_nascimento" id="data_nascimento" required placeholder="Data de nascimento:">
+            </div>
+            <div class="d-flex justify-content-center col-12">
+                <input type="text" class="form-control" name="sintomas" id="sintomas" required placeholder="Sintomas do paciente:">
+            </div>
+            <form action="">
+                <button> Adicionar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
